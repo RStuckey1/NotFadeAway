@@ -14,7 +14,7 @@ function Footer() {
             height: '100px'}}>
             
            
-            <p>&copy; {new Date().getFullYear()} Richard Stuckey</p>
+            <p>&copy; {new Date().getFullYear()} Not Fade Away Audio Equipment Repairs</p>
            
             </Box>
     
