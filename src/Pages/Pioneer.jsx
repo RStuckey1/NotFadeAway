@@ -4,11 +4,11 @@ import ImageList from '@mui/material/ImageList';
 import { Box } from '@mui/material';
 import '../assets/pioneer/dial.png';
 import '../assets/pioneer/looking.png';
-import '../assets/pioneer/openUnit.png';
+import '../assets/pioneer/openUnit.jpg';
 import '../assets/pioneer/problem.png';
 import '../assets/pioneer/unitFixes.png';
 import '../assets/pioneer/wholeUnit.png';
-import './Portfolio.css';
+import './Projects.css';
 
 
 
@@ -17,33 +17,7 @@ import './Portfolio.css';
 
 
 export default function Pioneer() {
-    const itemData = [
-        {
-            img: "../assests/pioneer/wholeUnit.png",
-            title: 'Whole Unit',
-        },
-        {
-            img: "../assests/pioneer/openUnit.png",
-            title: 'Whole Unit',
-        },
-        {
-            img: "../assests/pioneer/dial.png",
-            title: 'Whole Unit',
-        },
-        {
-            img: "../assests/pioneer/looking.png",
-            title: 'Whole Unit',
-        },
-        {
-            img: "../assests/pioneer/problem.png",
-            title: 'Whole Unit',
-        },
-        {
-            img: "../assests/pioneer/unitFixes.png",
-            title: 'Whole Unit',
-        },
-    ];
-
+    
 
 
     return (
@@ -68,13 +42,22 @@ export default function Pioneer() {
 
 
                 </div>
-                <Box sx={{ width: 500, height: 450, overflow: 'scroll' }}>
-                    <ImageList variant="masonry" cols={2} gap={8}>
+                <ImageList sx={{
+                width: 2000,
+                height: 1000,
+                overflow: 'scroll',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                flexDirection: 'column',
+                textAlign: 'center',
+            }}>
+                   
                         {itemData.map((item) => (
                             <ImageListItem key={item.img}>
                                 <img
-                                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                    src={`${item.img}?w=248&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
                                     alt={item.title}
                                     loading="lazy"
                                 />
@@ -82,5 +65,32 @@ export default function Pioneer() {
                         ))}
                     </ImageList>
                 </Box>
-            </Box>
+           
     )};
+
+    const itemData = [
+        {
+            img: "../assets/pioneer/wholeUnit.png",
+            title: 'Whole Unit',
+        },
+        {
+            img: "../assets/pioneer/openUnit.jpg",
+            title: 'open Unit',
+        },
+        {
+            img: "../assets/pioneer/dial.png",
+            title: 'dial',
+        },
+        {
+            img: "../assets/pioneer/looking.png",
+            title: 'looking',
+        },
+        {
+            img: "../assets/pioneer/problem.png",
+            title: 'problem',
+        },
+        {
+            img: "../assets/pioneer/unitFixes.png",
+            title: 'unit Fixes',
+        },
+    ];

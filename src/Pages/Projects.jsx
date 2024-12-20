@@ -4,7 +4,7 @@ import ImageList from '@mui/material/ImageList';
 
 import './projects.css';
 import { Box } from '@mui/material';
-
+import CardPioneer from '../ProjectCards/CardPioneer';
    
 
 
@@ -32,7 +32,7 @@ function Portfolio() {
                 }} cols={3} rowHeight={164}
                 >
 
-                <Pioneer />
+                <CardPioneer />
           
                    
         </ImageList>

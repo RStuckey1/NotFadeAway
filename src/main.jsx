@@ -7,8 +7,10 @@ import Footer from './Footer.jsx'
 
 import About from './Pages/About.jsx'
 import Contact from './Pages/Contact.jsx'
+import CardPioneer from './ProjectCards/CardPioneer.jsx'
 import Projects from './Pages/Projects.jsx'
 import ErrorPage from './Pages/ErrorPage.jsx'
+import Pioneer from './Pages/Pioneer.jsx'
 import './index.css'
 
 
@@ -32,6 +34,10 @@ const router = createBrowserRouter([
       element: <CardPioneer />,
     },
     {
+      path: '/Pioneer',
+      element: <Pioneer />,
+    },
+    {
       path: '/Header',
       element: <Header />,
     },
@@ -45,7 +51,7 @@ const router = createBrowserRouter([
     },
   ]
 }
-]);
+])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

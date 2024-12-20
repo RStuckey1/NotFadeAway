@@ -6,17 +6,16 @@ import './index.css'
 
 
 function App() {
-  return <div className="NotFadeAway">
-
-    <>
+  return <div className= "notFadeAway">
+  <>
       <Header />
       <div>
         <Outlet />
       </div>
       <Footer />
     </>
-  </div>
-
+  
+</div>
 }
 
-export default App;
+export default App
