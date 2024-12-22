@@ -5,6 +5,8 @@ import ImageList from '@mui/material/ImageList';
 import './projects.css';
 import { Box } from '@mui/material';
 import CardPioneer from '../ProjectCards/CardPioneer';
+import CardMarantz2240 from '../ProjectCards/CardMarantz2240';
+import CardMarantzSR from '../ProjectCards/CardMarantzSR';
    
 
 
@@ -33,6 +35,8 @@ function Portfolio() {
                 >
 
                 <CardPioneer />
+                <CardMarantz2240 />
+                <CardMarantzSR />
           
                    
         </ImageList>
