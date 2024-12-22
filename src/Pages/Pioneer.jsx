@@ -1,13 +1,11 @@
 import React from 'react';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageList from '@mui/material/ImageList';
 import { Box } from '@mui/material';
 import dial from '../assets/pioneer/dial.png';
-import '../assets/pioneer/looking.png';
-import '../assets/pioneer/openUnit.jpg';
-import '../assets/pioneer/problem.png';
-import '../assets/pioneer/unitFixes.png';
-import '../assets/pioneer/wholeUnit.png';
+import looking from '../assets/pioneer/looking.png';
+import openUnit from '../assets/pioneer/openUnit.jpg';
+import problem from '../assets/pioneer/problem.png';
+import unitFixes from'../assets/pioneer/unitFixes.png';
+import wholeUnit from '../assets/pioneer/wholeUnit.png';
 import './Projects.css';
 
 
@@ -42,51 +40,22 @@ export default function Pioneer() {
 
 
             </div>
-        </Box><Box>
-                <ImageList sx={{
-                    width: 2000,
-                    height: 1000,
-                    overflow: 'scroll',
-                    display: 'flex',
-                }}>
+        </Box>
+        <Box>
+            <ul className="RepairList">
+                <li><img className="reList" src={wholeUnit} alt="wholeUnit"></img> </li>
+                <li><img className="reList" src={looking} alt="wholeUnit"></img> </li>
+                <li><img className="reList" src={problem} alt="wholeUnit"></img> </li>
+                <li><img className="reList" src={dial} alt="wholeUnit"></img> </li>
+                <li><img className="reList" src={openUnit} alt="wholeUnit"></img> </li>
+                <li><img className="reList" src={unitFixes} alt="wholeUnit"></img> </li>
+            
 
-                    {itemData.map((item) => (
-                        <ImageListItem key={item.img}>
-                            <img
-                                srcSet={`${item.img}?w=200&h=100&fit=crop&auto=format`}
-                                src={`${item.img}?w=200&h=100&fit=crop&auto=format`}
-                                alt={item.title}
-                                loading="lazy" />
-                        </ImageListItem>
-                    ))}
-                </ImageList>
-            </Box></>
-    ); 
+
+            </ul>
+
+        </Box>
+</>
+
+);
 };
-
-    const itemData = [
-        {
-            img: "../assets/pioneer/wholeUnit.png",
-            title: 'Whole Unit',
-        },
-        {
-            img: "../assets/pioneer/openUnit.jpg",
-            title: 'open Unit',
-        },
-        {
-            img:{dial},
-            title: 'dial',
-        },
-        {
-            img: "../assets/pioneer/looking.png",
-            title: 'looking',
-        },
-        {
-            img: "../assets/pioneer/problem.png",
-            title: 'problem',
-        },
-        {
-            img: "../assets/pioneer/unitFixes.png",
-            title: 'unit Fixes',
-        },
-    ];

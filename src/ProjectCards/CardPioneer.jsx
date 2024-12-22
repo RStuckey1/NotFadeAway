@@ -1,4 +1,4 @@
-import "../assets/pioneer/wholeUnit.png";
+
 import { Link } from 'react-router-dom';
 import pioneerCard from "../assets/pioneer/pioneerCard.png";
 
