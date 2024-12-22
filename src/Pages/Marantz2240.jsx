@@ -1,10 +1,8 @@
 import * as React from 'react';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageList from '@mui/material/ImageList';
 import { Box } from '@mui/material';
-import '../assets/MarantzSR9000G/unit.png';
-import '../assets/MarantzSR9000G/problem.png';
-import '../assets/MarantzSR9000G/marantzSR9000G.png';
+import marantz2240 from '../assets/Marantz2240/marantz2240.png';
+import topLid from '../assets/Marantz2240/topLid.png';
+import openedUp from '../assets/Marantz2240/openedUp.png';
 
 import './Projects.css';
 
@@ -14,27 +12,13 @@ import './Projects.css';
 
 
 
-export default function Pioneer() {
-    const itemData = [
-        {
-            img: "../assests/MarantzSR9000G/unit.png",
-            title: 'Whole Unit',
-        },
-        {
-            img: "../assests/MarantzSR9000G/problem.png",
-            title: 'Whole Unit',
-        },
-        {
-            img: "../assests/MarantzSR9000G/marantzSR9000G.png",
-            title: 'Whole Unit',
-        },
-        
-    ];
+export default function Marantz2240 () {
+   
 
 
 
     return (
-        
+        <>
             <Box sx={{
                 width: '100%',
                 display: 'flex',
@@ -55,19 +39,19 @@ export default function Pioneer() {
 
 
                 </div>
-                <Box sx={{ width: 500, height: 450, overflow: 'scroll' }}>
-                    <ImageList variant="masonry" cols={2} gap={8}>
-                        {itemData.map((item) => (
-                            <ImageListItem key={item.img}>
-                                <img
-                                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                    src={`${item.img}?w=248&fit=crop&auto=format`}
-                                    alt={item.title}
-                                    loading="lazy"
-                                />
-                            </ImageListItem>
-                        ))}
-                    </ImageList>
                 </Box>
-            </Box>
+                <Box>
+                                            <ul className="RepairList">
+                                                <li><img className="reList" src={marantz2240} alt="wholeUnit"></img> </li>
+                                                <li><img className="reList" src={topLid} alt="wholeUnit"></img> </li>
+                                                <li><img className="reList" src={openedUp} alt="wholeUnit"></img> </li>
+                                                
+                                            
+                                
+                                
+                                            </ul>
+                                
+                                        </Box>
+                                        </>
+               
     )};
