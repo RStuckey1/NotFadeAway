@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
+import List from './Pages/List.jsx'
 
 import About from './Pages/About.jsx'
 import Contact from './Pages/Contact.jsx'
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
     {
       path: '/Contact',
       element: <Contact />,
+    },
+    {
+      path: '/List',
+      element: <List />,
     },
     {
       path: '/CardPioneer',
