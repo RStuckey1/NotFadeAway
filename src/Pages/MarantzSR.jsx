@@ -4,7 +4,6 @@ import unit from '../assets/MarantzSR9000G/unit.png';
 import problem from '../assets/MarantzSR9000G/problem.png';
 import marantzSR9000G from '../assets/MarantzSR9000G/marantzSR9000G.png';
 
-import './Projects.css';
 
 
 

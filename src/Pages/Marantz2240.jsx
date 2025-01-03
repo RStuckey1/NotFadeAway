@@ -4,7 +4,7 @@ import marantz2240 from '../assets/Marantz2240/marantz2240.png';
 import topLid from '../assets/Marantz2240/topLid.png';
 import openedUp from '../assets/Marantz2240/openedUp.png';
 
-import './Projects.css';
+
 
 
 
