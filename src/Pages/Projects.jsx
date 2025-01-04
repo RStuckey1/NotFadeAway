@@ -10,7 +10,7 @@ import marantz2240Unit from "../assets/marantz2240/marantz2240.png";
 export function Projects() {
   return (
     <div> 
-        <h1>Here are Some Examples or Equipment that has been</h1>
+        <h1>Here are Some Examples of Equipment that has been</h1>
         <h1>Repaired, With Care, By Brandon -Owner of Not Fade Away</h1>
 
     <ImageList sx={{ mx: 'auto', width: 1000, height: 1000 }} >

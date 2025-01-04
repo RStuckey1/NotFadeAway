@@ -13,6 +13,7 @@ import ErrorPage from './Pages/ErrorPage.jsx'
 import Pioneer from './Pages/Pioneer.jsx'
 import Marantz2240 from './Pages/Marantz2240.jsx'
 import './index.css'
+import Home from './Pages/Home.jsx'
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,15 @@ const router = createBrowserRouter([
   errorElement: <ErrorPage />,
   children: [
    
+
+    {
+      index: true,
+      element: <Home />,
+    },
+    { 
+      path: '/Home',
+      element: <Home />,
+    },
     {
       path: '/About',
       element: <About />,
